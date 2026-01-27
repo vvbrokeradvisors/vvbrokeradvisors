@@ -9,109 +9,25 @@
 
 <style>
 body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#111827;line-height:1.6;}
-
-/* HERO */
 .hero {
   background:url('img/ciudad-bg.jpg') center/cover no-repeat fixed;
-  height:65vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
+  height:65vh;display:flex;align-items:center;justify-content:center;text-align:center;
 }
-.hero-overlay {
-  background:rgba(0,0,0,0.65);
-  padding:40px 60px;
-  color:white;
-  border-radius:6px;
-}
-
-/* SECTIONS */
-section {max-width:900px;margin:60px auto;padding:0 20px;}
+.hero-overlay {background:rgba(0,0,0,0.65);padding:40px 60px;color:white;border-radius:6px;}
+section {max-width:950px;margin:60px auto;padding:0 20px;}
 h2 {color:#0f172a;}
-
-/* SERVICES GRAY CARDS */
-.services-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
-  margin-top: 25px;
-}
-
-.service-card {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: #f1f3f5;
-  border: 1px solid #e5e7eb;
-  padding: 18px 20px;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  color: #111827;
-  transition: 0.25s ease;
-}
-
-.service-card:hover {
-  background: #e2e5e9;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.service-icon {
-  font-size: 1.5rem;
-  background: #111827;
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.service-text {
-  font-weight: 500;
-}
-
-/* FOOTER */
-.footer {
-  background:#020617;
-  color:#cbd5f5;
-  padding:40px 20px;
-  text-align:center;
-  font-size:0.85rem;
-}
-.footer-logo img {
-  max-width:80px;
-  margin-bottom:15px;
-  opacity:0.9;
-}
-.footer a {
-  color:#cbd5f5;
-  text-decoration:none;
-  margin:0 8px;
-}
+.value-box {background:#f1f3f5;border:1px solid #e5e7eb;padding:28px;border-radius:14px;font-size:1.05rem;box-shadow:0 6px 20px rgba(0,0,0,0.04);}
+.services-cards {display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:18px;margin-top:25px;}
+.service-card {display:flex;align-items:center;gap:14px;background:#f1f3f5;border:1px solid #e5e7eb;padding:18px 20px;border-radius:12px;font-size:0.95rem;color:#111827;text-decoration:none;transition:0.25s ease;}
+.service-card:hover {background:#e2e5e9;transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.06);}
+.service-icon {font-size:1.5rem;background:#111827;color:white;padding:10px;border-radius:8px;}
+.footer {background:#020617;color:#cbd5f5;padding:40px 20px;text-align:center;font-size:0.85rem;}
+.footer-logo img {max-width:80px;margin-bottom:15px;opacity:0.9;}
+.footer a {color:#cbd5f5;text-decoration:none;margin:0 8px;}
 .footer a:hover {text-decoration:underline;}
-
-/* CONTACT */
-.contact-links {
-  display:flex;
-  justify-content:center;
-  gap:16px;
-  margin-top:20px;
-}
-.contact-btn {
-  display:flex;
-  align-items:center;
-  gap:8px;
-  padding:8px 14px;
-  background:#020617;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-  font-size:0.85rem;
-  border:1px solid #1f2933;
-}
-.contact-btn img {
-  width:16px;
-  height:16px;
-}
+.contact-links {display:flex;justify-content:center;gap:16px;margin-top:20px;}
+.contact-btn {display:flex;align-items:center;gap:8px;padding:8px 14px;background:#020617;color:white;text-decoration:none;border-radius:6px;font-size:0.85rem;border:1px solid #1f2933;}
+.contact-btn img {width:16px;height:16px;}
 </style>
 </head>
 
@@ -127,58 +43,34 @@ h2 {color:#0f172a;}
 
 <section>
 <h2>Propuesta de Valor / Value Proposition</h2>
-<p>Ayudamos a empresas y emprendedores a estructurar solicitudes de financiamiento mediante análisis de perfil, precalificación y gestión con instituciones financieras y plataformas fintech aliadas, con un enfoque consultivo, transparente y orientado a resultados.</p>
-<p>We help companies structure financing requests through profile analysis, pre-qualification, and coordination with financial institutions and fintech platforms.</p>
+<div class="value-box">
+<p><strong>VV Broker Advisors</strong> es una firma especializada en intermediación y asesoría en financiamiento empresarial. Facilitamos el acceso al capital mediante un enfoque estructurado, consultivo y basado en análisis financiero.</p>
+<p>Apoyamos a empresas y emprendedores en el diagnóstico del perfil, precalificación, preparación de documentación y gestión con instituciones financieras y plataformas fintech aliadas, reduciendo fricciones, tiempos y riesgos en el proceso.</p>
+<p><em>We help companies navigate the financing process through structured analysis, documentation support, and coordination with financial institutions and fintech platforms, enabling efficient and informed funding decisions.</em></p>
+</div>
 </section>
 
 <section>
 <h2>Servicios / Services</h2>
-
 <div class="services-cards">
-  <div class="service-card">
-    <div class="service-icon">💼</div>
-    <div class="service-text">Intermediación de financiamiento empresarial</div>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon">📊</div>
-    <div class="service-text">Análisis y precalificación de perfil crediticio</div>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon">📑</div>
-    <div class="service-text">Estructuración financiera de solicitudes</div>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon">🤝</div>
-    <div class="service-text">Acompañamiento consultivo durante el proceso</div>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon">⏱️</div>
-    <div class="service-text">Orientación sobre montos, plazos y condiciones</div>
-  </div>
+  <a href="services/intermediacion.html" class="service-card"><div class="service-icon">💼</div>Intermediación de financiamiento empresarial</a>
+  <a href="services/precalificacion.html" class="service-card"><div class="service-icon">📊</div>Análisis y precalificación de perfil crediticio</a>
+  <a href="services/estructuracion.html" class="service-card"><div class="service-icon">📑</div>Estructuración financiera de solicitudes</a>
+  <a href="services/acompanamiento.html" class="service-card"><div class="service-icon">🤝</div>Acompañamiento consultivo durante el proceso</a>
+  <a href="services/orientacion.html" class="service-card"><div class="service-icon">⏱️</div>Orientación sobre montos, plazos y condiciones</a>
 </div>
-
 </section>
 
 <section>
 <h2>Contacto / Contact</h2>
 <div class="contact-links">
-  <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn">
-    <img src="img/whatsapp.svg"> WhatsApp
-  </a>
-  <a href="mailto:contacto@vvbrokeradvisors.com" class="contact-btn">
-    <img src="img/email.svg"> Email
-  </a>
+  <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn"><img src="img/whatsapp.svg"> WhatsApp</a>
+  <a href="mailto:contacto@vvbrokeradvisors.com" class="contact-btn"><img src="img/email.svg"> Email</a>
 </div>
 </section>
 
 <footer class="footer">
-  <div class="footer-logo">
-    <img src="img/logo-vv.png" alt="VV Broker Advisors Logo">
-  </div>
+  <div class="footer-logo"><img src="img/logo-vv.png" alt="VV Broker Advisors Logo"></div>
   <p>VV Broker Advisors actúa como intermediario y asesor independiente. No es una institución financiera ni garantiza la aprobación de financiamiento.</p>
   <p>VV Broker Advisors acts as an independent broker and advisor. We do not provide loans or guarantee approvals.</p>
   <p>
