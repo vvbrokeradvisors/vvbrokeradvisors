@@ -4,66 +4,226 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VV Broker Advisors | Intermediación en Financiamiento Empresarial</title>
-<meta name="description" content="VV Broker Advisors es una firma de intermediación y asesoría en financiamiento empresarial en México.">
+<title>VV Broker Advisors | Strategic Business Financing Advisory</title>
+<meta name="description" content="VV Broker Advisors es una firma de asesoría estratégica en financiamiento empresarial en México.">
 
 <style>
 body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#111827;line-height:1.6;}
-.hero {background:url('img/ciudad-bg.jpg') center/cover no-repeat fixed;height:65vh;display:flex;align-items:center;justify-content:center;text-align:center;}
-.hero-overlay {background:rgba(0,0,0,0.65);padding:40px 60px;color:white;border-radius:6px;}
-section {max-width:950px;margin:60px auto;padding:0 20px;}
+
+/* NAVBAR */
+.navbar {
+  position:fixed;
+  top:0;
+  width:100%;
+  background:white;
+  border-bottom:1px solid #e5e7eb;
+  padding:12px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+.nav-logo {font-weight:bold;font-size:1.1rem;}
+.nav-links a {
+  margin-left:18px;
+  text-decoration:none;
+  font-size:0.9rem;
+  color:#111827;
+}
+.nav-links a:hover {text-decoration:underline;}
+.nav-cta {
+  margin-left:22px;
+  padding:8px 14px;
+  background:#111827;
+  color:white;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:0.85rem;
+}
+
+/* HERO */
+.hero {
+  background:url('img/ciudad-bg.jpg') center/cover no-repeat fixed;
+  height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding-top:60px;
+}
+.hero-overlay {
+  background:rgba(0,0,0,0.65);
+  padding:40px 60px;
+  color:white;
+  border-radius:8px;
+}
+
+/* SECTIONS */
+section {max-width:1000px;margin:80px auto;padding:0 20px;}
 h2 {color:#0f172a;}
-.value-box {background:#f1f3f5;border:1px solid #e5e7eb;padding:28px;border-radius:14px;font-size:1.05rem;box-shadow:0 6px 20px rgba(0,0,0,0.04);}
 
-.services-cards {display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:18px;margin-top:25px;}
-.service-card {position:relative;display:flex;align-items:center;gap:14px;background:#f1f3f5;border:1px solid #e5e7eb;padding:18px 20px;border-radius:12px;font-size:0.95rem;color:#111827;transition:0.25s ease;cursor:pointer;}
-.service-card:hover {background:#e2e5e9;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.05);}
-.service-icon {font-size:1.4rem;background:#111827;color:white;padding:8px;border-radius:6px;}
-.service-tooltip {position:absolute;bottom:110%;left:0;background:#020617;color:white;padding:12px 14px;border-radius:8px;font-size:0.85rem;width:260px;opacity:0;pointer-events:none;transition:0.2s ease;box-shadow:0 10px 30px rgba(0,0,0,0.2);}
-.service-card:hover .service-tooltip {opacity:1;}
+/* VALUE BOX */
+.value-box {
+  background:#f1f3f5;
+  border:1px solid #e5e7eb;
+  padding:28px;
+  border-radius:14px;
+  font-size:1.05rem;
+  box-shadow:0 6px 20px rgba(0,0,0,0.04);
+}
 
-.footer {background:#020617;color:#cbd5f5;padding:40px 20px;text-align:center;font-size:0.85rem;}
+/* SERVICES & SECTORS CARDS */
+.cards-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:18px;
+  margin-top:25px;
+}
+.card-box {
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#f1f3f5;
+  border:1px solid #e5e7eb;
+  padding:16px 18px;
+  border-radius:12px;
+  font-size:0.95rem;
+  color:#111827;
+  transition:0.25s ease;
+  cursor:pointer;
+}
+.card-box:hover {
+  background:#e2e5e9;
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+.card-icon {
+  font-size:1.4rem;
+  background:#111827;
+  color:white;
+  padding:8px;
+  border-radius:6px;
+}
+
+/* Tooltip */
+.card-tooltip {
+  position:absolute;
+  bottom:110%;
+  left:0;
+  background:#020617;
+  color:white;
+  padding:12px 14px;
+  border-radius:8px;
+  font-size:0.85rem;
+  width:280px;
+  opacity:0;
+  pointer-events:none;
+  transition:0.2s ease;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+.card-box:hover .card-tooltip {opacity:1;}
+
+/* FOOTER */
+.footer {
+  background:#020617;
+  color:#cbd5f5;
+  padding:40px 20px;
+  text-align:center;
+  font-size:0.85rem;
+}
 .footer-logo img {max-width:80px;margin-bottom:15px;opacity:0.9;}
 .footer a {color:#cbd5f5;text-decoration:none;margin:0 8px;}
 .footer a:hover {text-decoration:underline;}
-.contact-links {display:flex;justify-content:center;gap:16px;margin-top:20px;}
-.contact-btn {display:flex;align-items:center;gap:8px;padding:8px 14px;background:#020617;color:white;text-decoration:none;border-radius:6px;font-size:0.85rem;border:1px solid #1f2933;}
+
+/* CONTACT */
+.contact-links {
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  margin-top:20px;
+}
+.contact-btn {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 14px;
+  background:#020617;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:0.85rem;
+  border:1px solid #1f2933;
+}
 .contact-btn img {width:16px;height:16px;}
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-logo">VV Broker Advisors</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#methodology">Methodology</a>
+    <a href="#sectors">Sectors</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta">Request Advisory Call</a>
+  </div>
+</div>
+
 <header class="hero">
   <div class="hero-overlay">
     <h1>VV Broker Advisors</h1>
-    <p>Firma de intermediación y asesoría en financiamiento empresarial.<br>
-    Business Financing Advisory & Brokerage Firm</p>
+    <p>
+      Asesoría estratégica en financiamiento empresarial<br>
+      Strategic Business Financing Advisory
+    </p>
   </div>
 </header>
 
-<section>
+<section id="about">
 <h2>Propuesta de Valor / Value Proposition</h2>
 <div class="value-box">
-<p><strong>VV Broker Advisors</strong> es una firma especializada en intermediación y asesoría en financiamiento empresarial. Facilitamos el acceso al capital mediante un enfoque estructurado, consultivo y basado en análisis financiero.</p>
+<p><strong>VV Broker Advisors</strong> es una firma especializada en intermediación y asesoría estratégica en financiamiento empresarial. Facilitamos el acceso al capital mediante un enfoque estructurado, consultivo y basado en análisis financiero.</p>
 <p>Apoyamos a empresas y emprendedores en el diagnóstico del perfil, precalificación, preparación de documentación y gestión con instituciones financieras y plataformas fintech aliadas, reduciendo fricciones, tiempos y riesgos en el proceso.</p>
 <p><em>We help companies navigate the financing process through structured analysis, documentation support, and coordination with financial institutions and fintech platforms.</em></p>
 </div>
 </section>
 
-<section>
+<section id="services">
 <h2>Servicios / Services</h2>
-
-<div class="services-cards">
-<div class="service-card"><div class="service-icon">💼</div>Intermediación de financiamiento empresarial<div class="service-tooltip">Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito.</div></div>
-<div class="service-card"><div class="service-icon">📊</div>Análisis y precalificación<div class="service-tooltip">Evaluamos información financiera para orientar solicitudes.</div></div>
-<div class="service-card"><div class="service-icon">📑</div>Estructuración financiera<div class="service-tooltip">Definimos montos, plazos y estructura de financiamiento.</div></div>
-<div class="service-card"><div class="service-icon">🤝</div>Acompañamiento consultivo<div class="service-tooltip">Soporte durante el proceso con instituciones financieras.</div></div>
-<div class="service-card"><div class="service-icon">⏱️</div>Orientación de condiciones<div class="service-tooltip">Asesoramos sobre escenarios y riesgos de financiamiento.</div></div>
+<div class="cards-grid">
+<div class="card-box"><div class="card-icon">💼</div>Intermediación<div class="card-tooltip">Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito.</div></div>
+<div class="card-box"><div class="card-icon">📊</div>Precalificación<div class="card-tooltip">Evaluamos información financiera para orientar solicitudes de financiamiento.</div></div>
+<div class="card-box"><div class="card-icon">📑</div>Estructuración<div class="card-tooltip">Definimos montos, plazos y estructura financiera adecuada.</div></div>
+<div class="card-box"><div class="card-icon">🤝</div>Acompañamiento<div class="card-tooltip">Soporte durante el proceso con instituciones financieras.</div></div>
+<div class="card-box"><div class="card-icon">⏱️</div>Orientación<div class="card-tooltip">Asesoramos sobre escenarios y riesgos de financiamiento.</div></div>
 </div>
 </section>
 
-<section>
+<section id="methodology">
+<h2>Metodología / Methodology</h2>
+<p>1) Diagnóstico inicial. 2) Precalificación financiera. 3) Estructuración de solicitud. 4) Canalización con instituciones. 5) Acompañamiento hasta resolución.</p>
+</section>
+
+<section id="sectors">
+<h2>Sectores Atendidos / Sectors</h2>
+<div class="cards-grid">
+<div class="card-box"><div class="card-icon">🏭</div>Manufactura<div class="card-tooltip">Empresas industriales, producción ligera y pesada.</div></div>
+<div class="card-box"><div class="card-icon">🚚</div>Logística y Transporte<div class="card-tooltip">Flotillas, transporte terrestre, última milla y supply chain.</div></div>
+<div class="card-box"><div class="card-icon">🍽️</div>Restaurantes y Alimentos<div class="card-tooltip">Cadenas, dark kitchens y food service.</div></div>
+<div class="card-box"><div class="card-icon">🛒</div>Comercio y Distribución<div class="card-tooltip">Mayoristas, minoristas y e-commerce.</div></div>
+<div class="card-box"><div class="card-icon">💻</div>Tecnología<div class="card-tooltip">SaaS, startups tecnológicas y servicios digitales.</div></div>
+<div class="card-box"><div class="card-icon">🌾</div>Agroindustria<div class="card-tooltip">Ganadería, agricultura y cadenas agroalimentarias.</div></div>
+<div class="card-box"><div class="card-icon">🏢</div>Servicios Profesionales<div class="card-tooltip">Consultoras, despachos y servicios B2B.</div></div>
+<div class="card-box"><div class="card-icon">🏗️</div>Construcción e Inmobiliario<div class="card-tooltip">Desarrolladores, contratistas y proyectos inmobiliarios.</div></div>
+</div>
+</section>
+
+<section id="contact">
 <h2>Contacto / Contact</h2>
 <div class="contact-links">
   <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn"><img src="img/whatsapp.svg"> WhatsApp</a>
