@@ -43,7 +43,10 @@ nav a:hover {
 }
 
 .hero {
-  background: #333;
+  background-image: url('../img/ciudad-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   padding: 100px 0;
   text-align: center;
