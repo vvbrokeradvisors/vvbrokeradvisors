@@ -6,23 +6,112 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VV Broker Advisors | Intermediación en Financiamiento Empresarial</title>
 <meta name="description" content="VV Broker Advisors es una firma de intermediación y asesoría en financiamiento empresarial en México.">
+
 <style>
-body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#f9fafb;color:#111827;line-height:1.6;}
+body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#111827;line-height:1.6;}
+
+/* HERO */
 .hero {
   background:url('img/ciudad-bg.jpg') center/cover no-repeat fixed;
-  height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;
+  height:65vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
-.hero-overlay {background:rgba(0,0,0,0.65);padding:40px 60px;color:white;border-radius:4px;}
+.hero-overlay {
+  background:rgba(0,0,0,0.65);
+  padding:40px 60px;
+  color:white;
+  border-radius:6px;
+}
+
+/* SECTIONS */
 section {max-width:900px;margin:60px auto;padding:0 20px;}
 h2 {color:#0f172a;}
-ul,ol {margin-left:20px;}
-.footer {background:#020617;color:#cbd5f5;padding:40px 20px;text-align:center;font-size:0.85rem;}
-.footer-logo img {max-width:80px;margin-bottom:15px;opacity:0.9;}
-.footer a {color:#cbd5f5;text-decoration:none;margin:0 8px;}
+
+/* SERVICES GRAY CARDS */
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f1f3f5;
+  border: 1px solid #e5e7eb;
+  padding: 18px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #111827;
+  transition: 0.25s ease;
+}
+
+.service-card:hover {
+  background: #e2e5e9;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.service-icon {
+  font-size: 1.5rem;
+  background: #111827;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.service-text {
+  font-weight: 500;
+}
+
+/* FOOTER */
+.footer {
+  background:#020617;
+  color:#cbd5f5;
+  padding:40px 20px;
+  text-align:center;
+  font-size:0.85rem;
+}
+.footer-logo img {
+  max-width:80px;
+  margin-bottom:15px;
+  opacity:0.9;
+}
+.footer a {
+  color:#cbd5f5;
+  text-decoration:none;
+  margin:0 8px;
+}
 .footer a:hover {text-decoration:underline;}
-.contact-links {display:flex;justify-content:center;gap:16px;margin-top:20px;}
-.contact-btn {display:flex;align-items:center;gap:8px;padding:8px 14px;background:#020617;color:white;text-decoration:none;border-radius:6px;font-size:0.85rem;border:1px solid #1f2933;}
-.contact-btn img {width:16px;height:16px;}
+
+/* CONTACT */
+.contact-links {
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  margin-top:20px;
+}
+.contact-btn {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 14px;
+  background:#020617;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:0.85rem;
+  border:1px solid #1f2933;
+}
+.contact-btn img {
+  width:16px;
+  height:16px;
+}
 </style>
 </head>
 
@@ -44,39 +133,59 @@ ul,ol {margin-left:20px;}
 
 <section>
 <h2>Servicios / Services</h2>
-<ul>
-<li>Intermediación de financiamiento empresarial</li>
-<li>Análisis y precalificación de perfil crediticio</li>
-<li>Estructuración financiera de solicitudes</li>
-<li>Acompañamiento consultivo durante el proceso</li>
-<li>Orientación sobre montos, plazos y condiciones</li>
-</ul>
+
+<div class="services-cards">
+  <div class="service-card">
+    <div class="service-icon">💼</div>
+    <div class="service-text">Intermediación de financiamiento empresarial</div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">📊</div>
+    <div class="service-text">Análisis y precalificación de perfil crediticio</div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">📑</div>
+    <div class="service-text">Estructuración financiera de solicitudes</div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">🤝</div>
+    <div class="service-text">Acompañamiento consultivo durante el proceso</div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">⏱️</div>
+    <div class="service-text">Orientación sobre montos, plazos y condiciones</div>
+  </div>
+</div>
+
 </section>
 
 <section>
 <h2>Contacto / Contact</h2>
 <div class="contact-links">
-<a href="https://wa.me/5215665044419" target="_blank" class="contact-btn">
-<img src="img/whatsapp.svg"> WhatsApp
-</a>
-<a href="mailto:contacto@vvbrokeradvisors.com" class="contact-btn">
-<img src="img/email.svg"> Email
-</a>
+  <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn">
+    <img src="img/whatsapp.svg"> WhatsApp
+  </a>
+  <a href="mailto:contacto@vvbrokeradvisors.com" class="contact-btn">
+    <img src="img/email.svg"> Email
+  </a>
 </div>
 </section>
 
 <footer class="footer">
-<div class="footer-logo">
-<img src="img/logo-vv.png" alt="VV Broker Advisors Logo">
-</div>
-<p>VV Broker Advisors actúa como intermediario y asesor independiente. No es una institución financiera ni garantiza la aprobación de financiamiento.</p>
-<p>VV Broker Advisors acts as an independent broker and advisor. We do not provide loans or guarantee approvals.</p>
-
-<p>
-<a href="aviso-de-privacidad.html">Aviso de Privacidad</a> |
-<a href="terminos-y-condiciones.html">Términos y Condiciones</a> |
-<a href="politica-de-cookies.html">Política de Cookies</a>
-</p>
+  <div class="footer-logo">
+    <img src="img/logo-vv.png" alt="VV Broker Advisors Logo">
+  </div>
+  <p>VV Broker Advisors actúa como intermediario y asesor independiente. No es una institución financiera ni garantiza la aprobación de financiamiento.</p>
+  <p>VV Broker Advisors acts as an independent broker and advisor. We do not provide loans or guarantee approvals.</p>
+  <p>
+    <a href="aviso-de-privacidad.html">Aviso de Privacidad</a> |
+    <a href="terminos-y-condiciones.html">Términos y Condiciones</a> |
+    <a href="politica-de-cookies.html">Política de Cookies</a>
+  </p>
 </footer>
 
 </body>
