@@ -58,8 +58,8 @@ body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#
 }
 
 /* SECTIONS */
-section {max-width:1000px;margin:80px auto;padding:0 20px;}
-h2 {color:#0f172a;}
+section {max-width:1100px;margin:80px auto;padding:0 20px;}
+h2 {color:#0f172a;margin-bottom:15px;}
 
 /* VALUE BOX */
 .value-box {
@@ -71,38 +71,47 @@ h2 {color:#0f172a;}
   box-shadow:0 6px 20px rgba(0,0,0,0.04);
 }
 
-/* CARDS GRID */
-.cards-grid {
+/* GRID */
+.grid {
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
   gap:18px;
-  margin-top:25px;
+  margin-top:20px;
 }
-.card-box {
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:12px;
+
+/* SERVICE CARDS */
+.service-card {
   background:#f1f3f5;
   border:1px solid #e5e7eb;
-  padding:16px 18px;
+  padding:18px;
   border-radius:12px;
-  font-size:0.95rem;
-  color:#111827;
-  transition:0.25s ease;
   cursor:pointer;
+  transition:0.2s;
 }
-.card-box:hover {
-  background:#e2e5e9;
+.service-card:hover {
+  background:#e5e7eb;
   transform:translateY(-2px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
-.card-icon {
-  font-size:1.4rem;
-  background:#111827;
-  color:white;
-  padding:8px;
-  border-radius:6px;
+.service-title {
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:1rem;
+}
+.service-note {
+  display:none;
+  margin-top:10px;
+  font-size:0.9rem;
+  background:white;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #e5e7eb;
+}
+
+/* Mostrar nota cuando activo */
+.service-card.active .service-note {
+  display:block;
 }
 
 /* FOOTER */
@@ -163,10 +172,7 @@ h2 {color:#0f172a;}
 <header class="hero">
   <div class="hero-overlay">
     <h1>VV Broker Advisors</h1>
-    <p>
-      Asesoría estratégica en financiamiento empresarial<br>
-      Strategic Business Financing Advisory
-    </p>
+    <p>Asesoría estratégica en financiamiento empresarial</p>
   </div>
 </header>
 
@@ -175,19 +181,67 @@ h2 {color:#0f172a;}
   <h2>Nosotros</h2>
   <div class="value-box">
     <p><strong>VV Broker Advisors</strong> es una firma especializada en intermediación y asesoría estratégica en financiamiento empresarial.</p>
-    <p>Apoyamos a empresas y emprendedores en diagnóstico financiero, precalificación y estructuración de solicitudes de financiamiento.</p>
+    <p>Apoyamos a empresas en diagnóstico financiero, precalificación, estructuración y acompañamiento con instituciones financieras y fintech.</p>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services">
   <h2>Servicios</h2>
-  <div class="cards-grid">
-    <div class="card-box"><div class="card-icon">💼</div>Intermediación</div>
-    <div class="card-box"><div class="card-icon">📊</div>Precalificación</div>
-    <div class="card-box"><div class="card-icon">📑</div>Estructuración</div>
-    <div class="card-box"><div class="card-icon">🤝</div>Acompañamiento</div>
-    <div class="card-box"><div class="card-icon">⏱️</div>Orientación</div>
+
+  <div class="grid">
+    
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">💼 Intermediación Financiera</div>
+      <div class="service-note">
+        Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito. Actuamos como intermediarios estratégicos.
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">📊 Precalificación</div>
+      <div class="service-note">
+        Evaluamos información financiera para determinar elegibilidad, montos, plazos y probabilidad de aprobación.
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">📑 Estructuración</div>
+      <div class="service-note">
+        Definimos estructura óptima de financiamiento, plazos, tasas, colateral y escenarios financieros.
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">🤝 Acompañamiento</div>
+      <div class="service-note">
+        Asistencia durante todo el proceso con instituciones financieras, desde solicitud hasta dispersión.
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">⏱️ Orientación Estratégica</div>
+      <div class="service-note">
+        Asesoría sobre escenarios de deuda, riesgos financieros, flujo de efectivo y optimización de capital.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section id="sectors">
+  <h2>Sectores Atendidos</h2>
+
+  <div class="grid">
+    <div class="service-card">🏭 Manufactura</div>
+    <div class="service-card">🚚 Logística y Transporte</div>
+    <div class="service-card">🍽️ Restaurantes y Alimentos</div>
+    <div class="service-card">🛒 Comercio y Distribución</div>
+    <div class="service-card">💻 Tecnología</div>
+    <div class="service-card">🌾 Agroindustria</div>
+    <div class="service-card">🏢 Servicios Profesionales</div>
+    <div class="service-card">🏗️ Construcción e Inmobiliario</div>
   </div>
 </section>
 
@@ -204,16 +258,13 @@ h2 {color:#0f172a;}
   </div>
 </section>
 
-<!-- FOOTER CON LOGO (MISMO LUGAR) -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-logo">
     <img src="img/logo.png" alt="VV Broker Advisors Logo">
   </div>
 
-  <p>
-    VV Broker Advisors actúa como intermediario y asesor independiente. 
-    No es una institución financiera ni garantiza la aprobación de financiamiento.
-  </p>
+  <p>VV Broker Advisors actúa como intermediario y asesor independiente. No es una institución financiera ni garantiza la aprobación de financiamiento.</p>
 
   <p>
     <a href="aviso-de-privacidad.html">Aviso de Privacidad</a> |
@@ -221,6 +272,13 @@ h2 {color:#0f172a;}
     <a href="politica-de-cookies.html">Política de Cookies</a>
   </p>
 </footer>
+
+<!-- SCRIPT PARA SERVICIOS TÁCTILES -->
+<script>
+function toggleService(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
