@@ -12,7 +12,16 @@
 <link rel="canonical" href="https://vvbrokeradvisor.com/">
 
 <style>
-body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#111827;line-height:1.6;}
+
+/* ===== BASE CORPORATIVO ===== */
+body {
+  margin:0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background:#ffffff;
+  color:#1f2933;
+  line-height:1.7;
+  font-size:16px;
+}
 
 /* NAVBAR */
 .navbar {
@@ -27,7 +36,7 @@ body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#
   align-items:center;
   z-index:1000;
 }
-.nav-logo {font-weight:bold;font-size:1.1rem;}
+.nav-logo {font-weight:600;font-size:1.1rem;letter-spacing:0.2px;}
 .nav-links a {
   margin-left:18px;
   text-decoration:none;
@@ -37,18 +46,19 @@ body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#
 .nav-links a:hover {text-decoration:underline;}
 .nav-cta {
   margin-left:22px;
-  padding:8px 14px;
+  padding:9px 16px;
   background:#111827;
   color:white;
   border-radius:6px;
   text-decoration:none;
   font-size:0.85rem;
+  font-weight:500;
 }
 
 /* HERO */
 .hero {
   background:url('img/ciudad-bg.jpg') center/cover no-repeat;
-  height:70vh;
+  height:72vh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -57,23 +67,40 @@ body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#
 }
 .hero-overlay {
   background:rgba(0,0,0,0.65);
-  padding:40px 60px;
+  padding:42px 60px;
   color:white;
-  border-radius:8px;
+  border-radius:10px;
+}
+.hero-overlay h1 {
+  font-size:2.2rem;
+  margin-bottom:8px;
+}
+.hero-overlay p {
+  font-size:1.1rem;
+  opacity:0.95;
 }
 
 /* SECTIONS */
-section {max-width:1100px;margin:80px auto;padding:0 20px;}
-h2 {color:#0f172a;margin-bottom:15px;}
+section {
+  max-width:1100px;
+  margin:90px auto;
+  padding:0 20px;
+}
+h2 {
+  color:#111111;
+  margin-bottom:15px;
+  font-size:1.45rem;
+  font-weight:600;
+}
 
 /* VALUE BOX */
 .value-box {
-  background:#f1f3f5;
+  background:#f8fafc;
   border:1px solid #e5e7eb;
   padding:28px;
   border-radius:14px;
   font-size:1.05rem;
-  box-shadow:0 6px 20px rgba(0,0,0,0.04);
+  box-shadow:0 6px 18px rgba(0,0,0,0.03);
 }
 
 /* GRID */
@@ -86,35 +113,40 @@ h2 {color:#0f172a;margin-bottom:15px;}
 
 /* SERVICE CARDS */
 .service-card {
-  background:#f1f3f5;
+  background:#f8fafc;
   border:1px solid #e5e7eb;
   padding:18px;
   border-radius:12px;
   cursor:pointer;
-  transition:0.2s;
+  transition:0.18s ease;
+  color:#565656; /* 🔥 GRIS SKYLINE GLOBAL EN TARJETAS */
 }
 .service-card:hover {
-  background:#e5e7eb;
+  background:#eef2f7;
   transform:translateY(-2px);
 }
+
+/* TITULOS TARJETAS */
 .service-title {
-  font-weight:bold;
+  font-weight:600;
   display:flex;
   align-items:center;
   gap:10px;
   font-size:1rem;
+  color:#565656; /* GRIS DE LA IMAGEN */
 }
+
+/* TEXTO DESCRIPTIVO */
 .service-note {
   display:none;
   margin-top:10px;
-  font-size:0.9rem;
+  font-size:0.92rem;
   background:white;
   padding:12px;
   border-radius:8px;
   border:1px solid #e5e7eb;
+  color:#6b6b6b;
 }
-
-/* Mostrar nota cuando activo */
 .service-card.active .service-note {
   display:block;
 }
@@ -123,7 +155,7 @@ h2 {color:#0f172a;margin-bottom:15px;}
 .footer {
   background:#020617;
   color:#cbd5f5;
-  padding:40px 20px;
+  padding:50px 20px;
   text-align:center;
   font-size:0.85rem;
 }
@@ -131,7 +163,6 @@ h2 {color:#0f172a;margin-bottom:15px;}
   max-width:160px;
   height:auto;
   margin-bottom:15px;
-  display:inline-block;
 }
 .footer a {color:#cbd5f5;text-decoration:none;margin:0 8px;}
 .footer a:hover {text-decoration:underline;}
@@ -147,7 +178,7 @@ h2 {color:#0f172a;margin-bottom:15px;}
   display:flex;
   align-items:center;
   gap:8px;
-  padding:8px 14px;
+  padding:9px 16px;
   background:#020617;
   color:white;
   text-decoration:none;
@@ -156,6 +187,7 @@ h2 {color:#0f172a;margin-bottom:15px;}
   border:1px solid #1f2933;
 }
 .contact-btn img {width:16px;height:16px;}
+
 </style>
 </head>
 
@@ -207,42 +239,31 @@ h2 {color:#0f172a;margin-bottom:15px;}
 <!-- SERVICES -->
 <section id="services">
   <h2>Servicios</h2>
-
   <div class="grid">
-    
+
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">💼 Intermediación Financiera</div>
-      <div class="service-note">
-        Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito. Actuamos como intermediarios estratégicos.
-      </div>
+      <div class="service-note">Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📊 Precalificación</div>
-      <div class="service-note">
-        Evaluamos información financiera para determinar elegibilidad, montos, plazos y probabilidad de aprobación.
-      </div>
+      <div class="service-note">Evaluamos información financiera para determinar elegibilidad, montos, plazos y probabilidad de aprobación.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📑 Estructuración</div>
-      <div class="service-note">
-        Definimos estructura óptima de financiamiento, plazos, tasas, colateral y escenarios financieros.
-      </div>
+      <div class="service-note">Definimos estructura óptima de financiamiento, plazos, tasas, colateral y escenarios financieros.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🤝 Acompañamiento</div>
-      <div class="service-note">
-        Asistencia durante todo el proceso con instituciones financieras, desde solicitud hasta dispersión.
-      </div>
+      <div class="service-note">Asistencia durante todo el proceso con instituciones financieras, desde solicitud hasta dispersión.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">⏱️ Orientación Estratégica</div>
-      <div class="service-note">
-        Asesoría sobre escenarios de deuda, riesgos financieros, flujo de efectivo y optimización de capital.
-      </div>
+      <div class="service-note">Asesoría sobre escenarios de deuda, riesgos financieros, flujo de efectivo y optimización de capital.</div>
     </div>
 
   </div>
@@ -271,7 +292,7 @@ h2 {color:#0f172a;margin-bottom:15px;}
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">💳 Qué es un crédito revolvente empresarial</div>
       <div class="service-note">
-        Explicación del funcionamiento de líneas revolventes, impacto en capital de trabajo y casos de uso.
+        Explicación del funcionamiento de líneas revolventes y su impacto en capital de trabajo.
         <br><a href="articulos/credito-revolvente.html">Leer más →</a>
       </div>
     </div>
@@ -279,16 +300,16 @@ h2 {color:#0f172a;margin-bottom:15px;}
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📈 Cómo el crédito impulsa el crecimiento empresarial</div>
       <div class="service-note">
-        Análisis del crecimiento empresarial financiado, ROI del crédito y riesgos.
+        Cómo las empresas utilizan financiamiento para expansión y optimización de capital.
         <br><a href="articulos/credito-crecimiento.html">Leer más →</a>
       </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">⚠️ Riesgos del financiamiento mal estructurado</div>
+      <div class="service-title">🏢 Empresas con crédito vs empresas sin crédito: impacto en crecimiento</div>
       <div class="service-note">
-        Errores comunes en deuda empresarial, tasas ocultas y sobreapalancamiento.
-        <br><a href="articulos/riesgos-financiamiento.html">Leer más →</a>
+        Evidencia global y México sobre cómo el acceso al financiamiento influye en el crecimiento empresarial.
+        <br><a href="articulos/empresas-con-credito.html">Leer más →</a>
       </div>
     </div>
 
@@ -315,7 +336,6 @@ h2 {color:#0f172a;margin-bottom:15px;}
   </div>
 
   <p>VV Broker Advisors actúa como intermediario y asesor independiente. No es una institución financiera ni garantiza la aprobación de financiamiento.</p>
-
   <p>La información publicada en este sitio es de carácter informativo y no constituye asesoría financiera personalizada ni oferta de crédito.</p>
 
   <p>
@@ -325,7 +345,6 @@ h2 {color:#0f172a;margin-bottom:15px;}
   </p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
 function toggleService(card) {
   card.classList.toggle("active");
