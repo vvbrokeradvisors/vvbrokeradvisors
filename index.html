@@ -6,7 +6,6 @@
 <title>VV Broker Advisors | Asesoría Estratégica en Financiamiento Empresarial</title>
 <meta name="description" content="VV Broker Advisors es una firma de asesoría estratégica en financiamiento empresarial en México.">
 
-<!-- SEO EXTRA -->
 <meta name="keywords" content="financiamiento empresarial México, crédito empresarial, broker de crédito, fintech, capital de trabajo">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vvbrokeradvisor.com/">
@@ -111,19 +110,24 @@ h2 {
   margin-top:20px;
 }
 
-/* SERVICE CARDS */
+/* =============================== */
+/* 🔥 SERVICE CARDS CON IMAGEN 🔥 */
+/* =============================== */
 .service-card {
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/cards-gradient.jpg') center/cover no-repeat;
+  border:1px solid rgba(255,255,255,0.15);
   padding:18px;
   border-radius:12px;
   cursor:pointer;
   transition:0.18s ease;
-  color:#565656; /* 🔥 GRIS SKYLINE GLOBAL EN TARJETAS */
+  color:white;
+  box-shadow:0 12px 30px rgba(0,0,0,0.5);
 }
 .service-card:hover {
-  background:#eef2f7;
   transform:translateY(-2px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.7);
 }
 
 /* TITULOS TARJETAS */
@@ -133,7 +137,7 @@ h2 {
   align-items:center;
   gap:10px;
   font-size:1rem;
-  color:#565656; /* GRIS DE LA IMAGEN */
+  color:white;
 }
 
 /* TEXTO DESCRIPTIVO */
@@ -141,11 +145,11 @@ h2 {
   display:none;
   margin-top:10px;
   font-size:0.92rem;
-  background:white;
+  background:rgba(0,0,0,0.85);
   padding:12px;
   border-radius:8px;
-  border:1px solid #e5e7eb;
-  color:#6b6b6b;
+  border:1px solid rgba(255,255,255,0.15);
+  color:#e5e7eb;
 }
 .service-card.active .service-note {
   display:block;
