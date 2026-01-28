@@ -174,9 +174,9 @@ h2 {
 /* CONTACT */
 .contact-links {
   display:flex;
-  justify-content:center;
+  justify-content:flex-start; /* 🔥 alineados a la izquierda */
   gap:16px;
-  margin-top:20px;
+  margin-top:8px;
 }
 .contact-btn {
   display:flex;
@@ -191,6 +191,21 @@ h2 {
   border:1px solid #1f2933;
 }
 .contact-btn img {width:16px;height:16px;}
+
+/* ===== NOSOTROS CON GRANITO ===== */
+#about .value-box {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/cards-gradient.jpg') center/cover no-repeat !important;
+  color:white !important;
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 12px 30px rgba(0,0,0,0.5);
+}
+
+#about .value-box p,
+#about .value-box strong {
+  color:white !important;
+}
 
 </style>
 </head>
