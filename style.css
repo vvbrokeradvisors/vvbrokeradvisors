@@ -84,7 +84,8 @@ section {
   gap: 20px;
 }
 
-.card {
+/* CARDS RESTAURADAS */
+.service-card {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -125,32 +126,4 @@ footer a {
 .faq-item h3 {
   font-size: 18px;
   margin-bottom: 5px;
-}
-
-/* ===================================================== */
-/* ===== CARDS CON IMAGEN DEGRADADO REAL (FINAL) ===== */
-/* ===================================================== */
-
-.card {
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('img/cards-gradient.jpg') center/cover no-repeat !important;
-  color: white !important;
-  border: 1px solid rgba(255,255,255,0.15) !important;
-  border-radius: 14px !important;
-  box-shadow: 0 14px 35px rgba(0,0,0,0.55);
-}
-
-/* Texto dentro de cards */
-.card h3,
-.card h2,
-.card p,
-.card li {
-  color: white !important;
-}
-
-/* Hover premium */
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 22px 60px rgba(0,0,0,0.75);
 }
