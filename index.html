@@ -6,6 +6,7 @@
 <title>VV Broker Advisors | Asesoría Estratégica en Financiamiento Empresarial</title>
 <meta name="description" content="VV Broker Advisors es una firma de asesoría estratégica en financiamiento empresarial en México.">
 
+<!-- SEO EXTRA -->
 <meta name="keywords" content="financiamiento empresarial México, crédito empresarial, broker de crédito, fintech, capital de trabajo">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vvbrokeradvisor.com/">
@@ -35,7 +36,7 @@ body {
   align-items:center;
   z-index:1000;
 }
-.nav-logo {font-weight:600;font-size:1.1rem;}
+.nav-logo {font-weight:600;font-size:1.1rem;letter-spacing:0.2px;}
 .nav-links a {
   margin-left:18px;
   text-decoration:none;
@@ -51,6 +52,7 @@ body {
   border-radius:6px;
   text-decoration:none;
   font-size:0.85rem;
+  font-weight:500;
 }
 
 /* HERO */
@@ -69,10 +71,16 @@ body {
   color:white;
   border-radius:10px;
 }
-.hero-overlay h1 {font-size:2.2rem;}
-.hero-overlay p {font-size:1.1rem;}
+.hero-overlay h1 {
+  font-size:2.2rem;
+  margin-bottom:8px;
+}
+.hero-overlay p {
+  font-size:1.1rem;
+  opacity:0.95;
+}
 
-/* SECTIONS NORMAL */
+/* SECTIONS */
 section {
   max-width:1100px;
   margin:90px auto;
@@ -80,6 +88,7 @@ section {
 }
 h2 {
   color:#111111;
+  margin-bottom:15px;
   font-size:1.45rem;
   font-weight:600;
 }
@@ -90,6 +99,7 @@ h2 {
   border:1px solid #e5e7eb;
   padding:28px;
   border-radius:14px;
+  font-size:1.05rem;
   box-shadow:0 6px 18px rgba(0,0,0,0.03);
 }
 
@@ -109,30 +119,37 @@ h2 {
   border-radius:12px;
   cursor:pointer;
   transition:0.18s ease;
+  color:#565656;
 }
 .service-card:hover {
   background:#eef2f7;
   transform:translateY(-2px);
 }
 
-/* TITLES */
+/* TITULOS TARJETAS */
 .service-title {
   font-weight:600;
   display:flex;
+  align-items:center;
   gap:10px;
+  font-size:1rem;
+  color:#565656;
 }
 
-/* NOTES */
+/* TEXTO DESCRIPTIVO */
 .service-note {
   display:none;
   margin-top:10px;
+  font-size:0.92rem;
   background:white;
   padding:12px;
   border-radius:8px;
   border:1px solid #e5e7eb;
   color:#6b6b6b;
 }
-.service-card.active .service-note {display:block;}
+.service-card.active .service-note {
+  display:block;
+}
 
 /* FOOTER */
 .footer {
@@ -140,8 +157,14 @@ h2 {
   color:#cbd5f5;
   padding:50px 20px;
   text-align:center;
+  font-size:0.85rem;
 }
-.footer a {color:#cbd5f5;text-decoration:none;}
+.footer-logo img {
+  max-width:160px;
+  height:auto;
+  margin-bottom:15px;
+}
+.footer a {color:#cbd5f5;text-decoration:none;margin:0 8px;}
 .footer a:hover {text-decoration:underline;}
 
 /* CONTACT */
@@ -149,62 +172,52 @@ h2 {
   display:flex;
   justify-content:center;
   gap:16px;
+  margin-top:20px;
 }
 .contact-btn {
   display:flex;
+  align-items:center;
   gap:8px;
   padding:9px 16px;
   background:#020617;
   color:white;
-  border-radius:6px;
   text-decoration:none;
+  border-radius:6px;
+  font-size:0.85rem;
+  border:1px solid #1f2933;
 }
+.contact-btn img {width:16px;height:16px;}
 
-/* ================= DARK FULL WIDTH SECTIONS ================= */
 
-/* Fondo oscuro full screen */
-.dark-section {
-  width:100%;
-  max-width:none !important;
-  margin:0 !important;
-  padding:80px 0;
-  background:#111827;
-}
-
-/* Centrar contenido interno */
-.dark-section > h2,
-.dark-section > .grid {
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 20px;
+/* ===== SECCIONES EN GRIS INSTITUCIONAL (#8D8D8D) ===== */
+.gray-section {
+  background:#8D8D8D;
+  color:white;
+  padding:60px 0;
 }
 
 /* Títulos blancos */
-.dark-section h2 {color:white;}
-
-/* Cards oscuras */
-.dark-section .service-card {
-  background:#1f2933;
-  border:1px solid #374151;
+.gray-section h2 {
   color:white;
-  box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
 
-/* Texto interno */
-.dark-section .service-note {
-  background:#111827;
-  color:#d1d5db;
-  border:1px solid #374151;
+/* Cards sobre gris */
+.gray-section .service-card {
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.25);
+  color:white;
 }
 
-/* Hover */
-.dark-section .service-card:hover {
-  background:#111827;
-  transform:translateY(-3px);
+/* Títulos de cards */
+.gray-section .service-title {
+  color:white;
 }
 
-/* Iconos y títulos */
-.dark-section .service-title {color:white;}
+/* Texto expandible */
+.gray-section .service-note {
+  background:white;
+  color:#1f2933;
+}
 
 </style>
 </head>
@@ -233,7 +246,7 @@ h2 {
 </header>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="gray-section">
   <h2>Nosotros</h2>
   <div class="value-box">
     <p><strong>VV Broker Advisors</strong> es una firma especializada en intermediación y asesoría estratégica en financiamiento empresarial.</p>
@@ -242,20 +255,20 @@ h2 {
 </section>
 
 <!-- WHY US -->
-<section id="why-us" class="dark-section">
+<section id="why-us" class="gray-section">
   <h2>Por qué VV Broker Advisors</h2>
   <div class="grid">
     <div class="service-card">🏦 Acceso a múltiples instituciones financieras y fintech</div>
     <div class="service-card">📉 Optimización de estructura de deuda y costo financiero</div>
     <div class="service-card">📊 Diagnóstico financiero estructurado con enfoque en aprobabilidad</div>
-    <div class="service-card">🤝 Acompañamiento completo hasta dispersión</div>
+    <div class="service-card">🤝 Acompañamiento completo hasta dispersión y asesoría personalizada sin costo posterior</div>
     <div class="service-card">⚙️ Estrategia de capital de trabajo y crecimiento</div>
     <div class="service-card">🧩 Asesoría independiente sin conflicto de interés</div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="dark-section">
+<section id="services" class="gray-section">
   <h2>Servicios</h2>
   <div class="grid">
 
@@ -271,24 +284,24 @@ h2 {
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📑 Estructuración</div>
-      <div class="service-note">Definimos estructura óptima de financiamiento, plazos, tasas y escenarios financieros.</div>
+      <div class="service-note">Definimos estructura óptima de financiamiento, plazos, tasas, colateral y escenarios financieros.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🤝 Acompañamiento</div>
-      <div class="service-note">Asistencia durante todo el proceso con instituciones financieras.</div>
+      <div class="service-note">Asistencia durante todo el proceso con instituciones financieras, desde solicitud hasta dispersión.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">⏱️ Orientación Estratégica</div>
-      <div class="service-note">Asesoría sobre escenarios de deuda, riesgos financieros y capital.</div>
+      <div class="service-note">Asesoría sobre escenarios de deuda, riesgos financieros, flujo de efectivo y optimización de capital.</div>
     </div>
 
   </div>
 </section>
 
 <!-- SECTORS -->
-<section id="sectors" class="dark-section">
+<section id="sectors" class="gray-section">
   <h2>Sectores Atendidos</h2>
   <div class="grid">
     <div class="service-card">🏭 Manufactura</div>
@@ -303,23 +316,32 @@ h2 {
 </section>
 
 <!-- ARTICLES -->
-<section id="articles" class="dark-section">
+<section id="articles" class="gray-section">
   <h2>Artículos y Análisis</h2>
   <div class="grid">
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">💳 Qué es un crédito revolvente empresarial</div>
-      <div class="service-note">Explicación del funcionamiento de líneas revolventes.<br><a href="articulos/credito-revolvente.html">Leer más →</a></div>
+      <div class="service-note">
+        Explicación del funcionamiento de líneas revolventes y su impacto en capital de trabajo.
+        <br><a href="articulos/credito-revolvente.html">Leer más →</a>
+      </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📈 Cómo el crédito impulsa el crecimiento empresarial</div>
-      <div class="service-note">Uso del financiamiento para expansión.<br><a href="articulos/credito-crecimiento.html">Leer más →</a></div>
+      <div class="service-note">
+        Cómo las empresas utilizan financiamiento para expansión y optimización de capital.
+        <br><a href="articulos/credito-crecimiento.html">Leer más →</a>
+      </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏢 Empresas con crédito vs sin crédito</div>
-      <div class="service-note">Impacto del financiamiento en crecimiento.<br><a href="articulos/empresas-con-credito.html">Leer más →</a></div>
+      <div class="service-title">🏢 Empresas con crédito vs empresas sin crédito: impacto en crecimiento</div>
+      <div class="service-note">
+        Evidencia global y México sobre cómo el acceso al financiamiento influye en el crecimiento empresarial.
+        <br><a href="articulos/empresas-con-credito.html">Leer más →</a>
+      </div>
     </div>
 
   </div>
@@ -329,18 +351,28 @@ h2 {
 <section id="contact">
   <h2>Contacto</h2>
   <div class="contact-links">
-    <a href="https://wa.me/5215665044419" class="contact-btn">WhatsApp</a>
-    <a href="mailto:contacto@vvbrokeradvisor.com" class="contact-btn">Email</a>
+    <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn">
+      <img src="img/whatsapp.svg"> WhatsApp
+    </a>
+    <a href="mailto:contacto@vvbrokeradvisor.com" class="contact-btn">
+      <img src="img/email.svg"> Email
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>VV Broker Advisors actúa como intermediario y asesor independiente.</p>
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="VV Broker Advisors Logo">
+  </div>
+
+  <p>VV Broker Advisors actúa como intermediario y asesor independiente. No es una institución financiera ni garantiza la aprobación de financiamiento.</p>
+  <p>La información publicada en este sitio es de carácter informativo y no constituye asesoría financiera personalizada ni oferta de crédito.</p>
+
   <p>
     <a href="aviso-de-privacidad.html">Aviso de Privacidad</a> |
-    <a href="terminos-y-condiciones.html">Términos</a> |
-    <a href="politica-de-cookies.html">Cookies</a>
+    <a href="terminos-y-condiciones.html">Términos y Condiciones</a> |
+    <a href="politica-de-cookies.html">Política de Cookies</a>
   </p>
 </footer>
 
