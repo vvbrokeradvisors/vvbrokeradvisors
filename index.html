@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VV Broker Advisors | Asesoría Estratégica en Financiamiento Empresarial</title>
+<meta name="description" content="VV Broker Advisors es una firma de asesoría estratégica en financiamiento empresarial en México.">
 
-<title>VV Broker Advisors | Intermediación en Financiamiento Empresarial</title>
-<meta name="description" content="Firma independiente de intermediación y asesoría en financiamiento empresarial en México. Diagnóstico, precalificación y estructuración de crédito corporativo.">
+<!-- SEO EXTRA -->
+<meta name="keywords" content="financiamiento empresarial México, crédito empresarial, broker de crédito, fintech, capital de trabajo">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vvbrokeradvisor.com/">
 
 <style>
 body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#ffffff;color:#111827;line-height:1.6;}
@@ -109,7 +113,11 @@ h2 {color:#0f172a;margin-bottom:15px;}
   border-radius:8px;
   border:1px solid #e5e7eb;
 }
-.service-card.active .service-note {display:block;}
+
+/* Mostrar nota cuando activo */
+.service-card.active .service-note {
+  display:block;
+}
 
 /* FOOTER */
 .footer {
@@ -148,22 +156,6 @@ h2 {color:#0f172a;margin-bottom:15px;}
   border:1px solid #1f2933;
 }
 .contact-btn img {width:16px;height:16px;}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction:column;
-    padding:10px 20px;
-  }
-  .nav-links {margin-top:8px;}
-  .hero {
-    height:auto;
-    padding:120px 20px 60px;
-  }
-  .hero-overlay {
-    padding:20px;
-  }
-}
 </style>
 </head>
 
@@ -176,7 +168,7 @@ h2 {color:#0f172a;margin-bottom:15px;}
     <a href="#about">Nosotros</a>
     <a href="#services">Servicios</a>
     <a href="#sectors">Sectores</a>
-    <a href="#insights">Insights</a>
+    <a href="#articles">Artículos</a>
     <a href="#contact">Contacto</a>
     <a href="#contact" class="nav-cta">Solicitar Diagnóstico</a>
   </div>
@@ -185,12 +177,8 @@ h2 {color:#0f172a;margin-bottom:15px;}
 <!-- HERO -->
 <header class="hero">
   <div class="hero-overlay">
-    <h1>Financiamiento empresarial estructurado</h1>
-    <p>Intermediación estratégica entre empresas e instituciones financieras en México</p>
-
-    <a href="#contact" style="display:inline-block;margin-top:18px;padding:10px 20px;background:#111827;color:white;border-radius:6px;text-decoration:none;font-size:0.9rem;">
-      Solicitar diagnóstico financiero
-    </a>
+    <h1>VV Broker Advisors</h1>
+    <p>Asesoría estratégica en financiamiento empresarial</p>
   </div>
 </header>
 
@@ -198,11 +186,21 @@ h2 {color:#0f172a;margin-bottom:15px;}
 <section id="about">
   <h2>Nosotros</h2>
   <div class="value-box">
-    <p><strong>VV Broker Advisors</strong> es una firma independiente de intermediación y asesoría estratégica en financiamiento empresarial.</p>
+    <p><strong>VV Broker Advisors</strong> es una firma especializada en intermediación y asesoría estratégica en financiamiento empresarial.</p>
+    <p>Apoyamos a empresas en diagnóstico financiero, precalificación, estructuración y acompañamiento con instituciones financieras y fintech.</p>
+  </div>
+</section>
 
-    <p>Asistimos a empresas en diagnóstico financiero, precalificación, estructuración y acompañamiento con instituciones financieras, bancos y plataformas fintech, sin otorgar crédito directamente.</p>
-
-    <p>Nuestro objetivo es optimizar la estructura de deuda, mejorar condiciones financieras y aumentar la probabilidad de aprobación mediante análisis técnico y preparación de información financiera.</p>
+<!-- WHY US -->
+<section id="why-us">
+  <h2>Por qué VV Broker Advisors</h2>
+  <div class="grid">
+    <div class="service-card">🏦 Acceso a múltiples instituciones financieras y fintech</div>
+    <div class="service-card">📉 Optimización de estructura de deuda y costo financiero</div>
+    <div class="service-card">📊 Diagnóstico financiero estructurado con enfoque en aprobabilidad</div>
+    <div class="service-card">🤝 Acompañamiento completo hasta dispersión</div>
+    <div class="service-card">⚙️ Estrategia de capital de trabajo y crecimiento</div>
+    <div class="service-card">🧩 Asesoría independiente sin conflicto de interés</div>
   </div>
 </section>
 
@@ -211,62 +209,140 @@ h2 {color:#0f172a;margin-bottom:15px;}
   <h2>Servicios</h2>
 
   <div class="grid">
-
+    
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">Intermediación Financiera</div>
+      <div class="service-title">💼 Intermediación Financiera</div>
       <div class="service-note">
         Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito. Actuamos como intermediarios estratégicos.
       </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">Precalificación Crediticia</div>
+      <div class="service-title">📊 Precalificación</div>
       <div class="service-note">
         Evaluamos información financiera para determinar elegibilidad, montos, plazos y probabilidad de aprobación.
       </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">Estructuración de Financiamiento</div>
+      <div class="service-title">📑 Estructuración</div>
       <div class="service-note">
-        Definimos estructura óptima de deuda, plazos, tasas, garantías y escenarios financieros.
+        Definimos estructura óptima de financiamiento, plazos, tasas, colateral y escenarios financieros.
       </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">Acompañamiento en Proceso</div>
+      <div class="service-title">🤝 Acompañamiento</div>
       <div class="service-note">
         Asistencia durante todo el proceso con instituciones financieras, desde solicitud hasta dispersión.
       </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">Orientación Estratégica</div>
+      <div class="service-title">⏱️ Orientación Estratégica</div>
       <div class="service-note">
         Asesoría sobre escenarios de deuda, riesgos financieros, flujo de efectivo y optimización de capital.
-      </div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">Asesoría Independiente</div>
-      <div class="service-note">
-        VV Broker Advisors no es una institución financiera, no capta recursos ni otorga crédito. Actúa como asesor e intermediario independiente.
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- PROCESS -->
+<section id="process">
+  <h2>Proceso de Trabajo</h2>
+  <div class="grid">
+    <div class="service-card">1️⃣ Diagnóstico financiero y entendimiento del negocio</div>
+    <div class="service-card">2️⃣ Precalificación y análisis de capacidad de deuda</div>
+    <div class="service-card">3️⃣ Estructuración de alternativas de financiamiento</div>
+    <div class="service-card">4️⃣ Intermediación con instituciones financieras</div>
+    <div class="service-card">5️⃣ Acompañamiento hasta aprobación y dispersión</div>
+  </div>
+</section>
+
 <!-- SECTORS -->
 <section id="sectors">
   <h2>Sectores Atendidos</h2>
-
   <div class="grid">
-    <div class="service-card">Manufactura</div>
-    <div class="service-card">Logística y Transporte</div>
-    <div class="service-card">Restaurantes y Alimentos</div>
-    <div class="service-card">Comercio y Distribución</div>
-    <div class="service-card">Tecnología</div>
-    <div class="service-card">Agroindustria</div>
-    <div class="service-card">Servicios Profesionales</div>
-    <div class="service-card">Construcción e Inm
+    <div class="service-card">🏭 Manufactura</div>
+    <div class="service-card">🚚 Logística y Transporte</div>
+    <div class="service-card">🍽️ Restaurantes y Alimentos</div>
+    <div class="service-card">🛒 Comercio y Distribución</div>
+    <div class="service-card">💻 Tecnología</div>
+    <div class="service-card">🌾 Agroindustria</div>
+    <div class="service-card">🏢 Servicios Profesionales</div>
+    <div class="service-card">🏗️ Construcción e Inmobiliario</div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section id="articles">
+  <h2>Artículos y Análisis</h2>
+  <div class="grid">
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">💳 Qué es un crédito revolvente empresarial</div>
+      <div class="service-note">
+        Explicación del funcionamiento de líneas revolventes, impacto en capital de trabajo y casos de uso.
+        <br><a href="articulos/credito-revolvente.html">Leer más →</a>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">📈 Cómo el crédito impulsa el crecimiento empresarial</div>
+      <div class="service-note">
+        Análisis del crecimiento empresarial financiado, ROI del crédito y riesgos.
+        <br><a href="articulos/credito-crecimiento.html">Leer más →</a>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">⚠️ Riesgos del financiamiento mal estructurado</div>
+      <div class="service-note">
+        Errores comunes en deuda empresarial, tasas ocultas y sobreapalancamiento.
+        <br><a href="articulos/riesgos-financiamiento.html">Leer más →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <div class="contact-links">
+    <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn">
+      <img src="img/whatsapp.svg"> WhatsApp
+    </a>
+    <a href="mailto:contacto@vvbrokeradvisor.com" class="contact-btn">
+      <img src="img/email.svg"> Email
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="VV Broker Advisors Logo">
+  </div>
+
+  <p>VV Broker Advisors actúa como intermediario y asesor independiente. No es una institución financiera ni garantiza la aprobación de financiamiento.</p>
+
+  <p>La información publicada en este sitio es de carácter informativo y no constituye asesoría financiera personalizada ni oferta de crédito.</p>
+
+  <p>
+    <a href="aviso-de-privacidad.html">Aviso de Privacidad</a> |
+    <a href="terminos-y-condiciones.html">Términos y Condiciones</a> |
+    <a href="politica-de-cookies.html">Política de Cookies</a>
+  </p>
+</footer>
+
+<!-- SCRIPT PARA SERVICIOS TÁCTILES -->
+<script>
+function toggleService(card) {
+  card.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
