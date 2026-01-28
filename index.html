@@ -119,7 +119,7 @@ h2 {
   border-radius:12px;
   cursor:pointer;
   transition:0.18s ease;
-  color:#565656; /* 🔥 GRIS SKYLINE GLOBAL EN TARJETAS */
+  color:inherit;
 }
 .service-card:hover {
   background:#eef2f7;
@@ -133,7 +133,6 @@ h2 {
   align-items:center;
   gap:10px;
   font-size:1rem;
-  color:#565656; /* GRIS DE LA IMAGEN */
 }
 
 /* TEXTO DESCRIPTIVO */
@@ -188,6 +187,33 @@ h2 {
 }
 .contact-btn img {width:16px;height:16px;}
 
+/* ===== DARK FINTECH SECTIONS (SOLO COLORES) ===== */
+.dark-section {
+  background:#111827;
+  padding:70px 0;
+}
+.dark-section h2 {
+  color:white;
+}
+.dark-section .service-card {
+  background:#1f2933;
+  border:1px solid #374151;
+  color:white;
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+.dark-section .service-note {
+  color:#d1d5db;
+  background:#111827;
+  border:1px solid #374151;
+}
+.dark-section .service-card:hover {
+  background:#111827;
+  transform:translateY(-3px);
+}
+.dark-section .service-title {
+  color:white;
+}
+
 </style>
 </head>
 
@@ -224,7 +250,7 @@ h2 {
 </section>
 
 <!-- WHY US -->
-<section id="why-us">
+<section id="why-us" class="dark-section">
   <h2>Por qué VV Broker Advisors</h2>
   <div class="grid">
     <div class="service-card">🏦 Acceso a múltiples instituciones financieras y fintech</div>
@@ -237,7 +263,7 @@ h2 {
 </section>
 
 <!-- SERVICES -->
-<section id="services">
+<section id="services" class="dark-section">
   <h2>Servicios</h2>
   <div class="grid">
 
@@ -270,7 +296,7 @@ h2 {
 </section>
 
 <!-- SECTORS -->
-<section id="sectors">
+<section id="sectors" class="dark-section">
   <h2>Sectores Atendidos</h2>
   <div class="grid">
     <div class="service-card">🏭 Manufactura</div>
@@ -285,7 +311,7 @@ h2 {
 </section>
 
 <!-- ARTICLES -->
-<section id="articles">
+<section id="articles" class="dark-section">
   <h2>Artículos y Análisis</h2>
   <div class="grid">
 
