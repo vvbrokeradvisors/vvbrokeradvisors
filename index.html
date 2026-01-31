@@ -203,7 +203,109 @@ h2 {
 #about .value-box p,
 #about .value-box strong {
   color:white !important;
-}
+  /* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 10px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 0.85rem;
+  }
+
+  .nav-cta {
+    margin-left: 0;
+    margin-top: 6px;
+    padding: 8px 14px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 80px 20px 60px;
+  }
+
+  .hero-overlay {
+    padding: 28px 22px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  /* SECTIONS */
+  section {
+    margin: 60px auto;
+    padding: 0 16px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  /* GRID */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* SERVICE CARDS */
+  .service-card {
+    padding: 16px;
+  }
+
+  .service-title {
+    font-size: 0.95rem;
+  }
+
+  .service-note {
+    font-size: 0.9rem;
+  }
+
+  /* VALUE BOX */
+  .value-box {
+    padding: 22px;
+    font-size: 1rem;
+  }
+
+  /* CONTACT */
+  .contact-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-btn {
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 16px;
+  }
+
+  .footer-logo img {
+    max-width: 140px;
+  }
+}}
 </style>
 </head>
 
