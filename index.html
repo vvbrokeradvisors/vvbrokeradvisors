@@ -151,6 +151,22 @@ h2 {
   display:block;
 }
 
+/* ===== AJUSTES VISUALES FINALES ===== */
+
+/* Artículos: "Leer más" en blanco */
+#articles a,
+#articles a:visited {
+  color:#ffffff !important;
+}
+#articles a:hover {
+  text-decoration:underline;
+}
+
+/* Ícono de email en blanco */
+.contact-btn.email img {
+  filter: brightness(0) invert(1);
+}
+
 /* FOOTER */
 .footer {
   background:#020617;
@@ -197,8 +213,7 @@ h2 {
   border:1px solid rgba(255,255,255,0.15);
   box-shadow:0 12px 30px rgba(0,0,0,0.5);
 }
-#about .value-box p,
-#about .value-box strong {
+#about .value-box p {
   color:white !important;
 }
 </style>
@@ -239,162 +254,6 @@ h2 {
   </div>
 </section>
 
-<!-- WHY US -->
-<section id="why-us">
-  <h2>Por qué VV Broker Advisors</h2>
-  <div class="grid">
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏦 Acceso a múltiples instituciones financieras y fintech</div>
-      <div class="service-note">
-        Evaluamos cada operación y la canalizamos con la institución más adecuada según perfil, sector y capacidad financiera.
-      </div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">📉 Optimización de estructura de deuda y costo financiero</div>
-      <div class="service-note">
-        Analizamos tasas, plazos y carga financiera para proponer estructuras sostenibles.
-      </div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">📊 Diagnóstico financiero estructurado</div>
-      <div class="service-note">
-        Revisamos información financiera y variables clave que inciden en la aprobabilidad del crédito.
-      </div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🤝 Acompañamiento completo hasta dispersión</div>
-      <div class="service-note">
-        Acompañamos al cliente durante todo el proceso, desde el análisis hasta la dispersión.
-      </div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">⚙️ Estrategia de capital de trabajo y crecimiento</div>
-      <div class="service-note">
-        Asesoramos sobre el uso adecuado del crédito para operación, expansión y flujo de efectivo.
-      </div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🧩 Asesoría independiente</div>
-      <div class="service-note">
-        Actuamos como intermediario independiente, sin conflicto de interés con las instituciones.
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-  <h2>Servicios</h2>
-  <div class="grid">
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">💼 Intermediación Financiera</div>
-      <div class="service-note">Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito.</div>
-    </div>
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">📊 Precalificación</div>
-      <div class="service-note">Evaluamos información financiera para determinar elegibilidad, montos y probabilidad.</div>
-    </div>
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">📑 Estructuración</div>
-      <div class="service-note">Definimos la estructura óptima de financiamiento.</div>
-    </div>
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🤝 Acompañamiento</div>
-      <div class="service-note">Asistencia durante todo el proceso hasta dispersión.</div>
-    </div>
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">⏱️ Orientación Estratégica</div>
-      <div class="service-note">Asesoría sobre escenarios de deuda y flujo de efectivo.</div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTORS -->
-<section id="sectors">
-  <h2>Sectores Atendidos</h2>
-  <div class="grid">
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏭 Manufactura</div>
-      <div class="service-note">Financiamiento para maquinaria, capital de trabajo y expansión productiva.</div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🚚 Logística y Transporte</div>
-      <div class="service-note">Soluciones para flotillas, liquidez operativa y renovación de activos.</div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🍽️ Restaurantes y Alimentos</div>
-      <div class="service-note">Apoyo financiero para operación, remodelaciones y expansión.</div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🛒 Comercio y Distribución</div>
-      <div class="service-note">Capital para inventarios, rotación de producto y expansión comercial.</div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">💻 Tecnología</div>
-      <div class="service-note">Financiamiento orientado a escalamiento y crecimiento estructurado.</div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🌾 Agroindustria</div>
-      <div class="service-note">Soluciones alineadas a ciclos productivos y estacionalidad.</div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏢 Servicios Profesionales</div>
-      <div class="service-note">Liquidez para operación y fortalecimiento financiero.</div>
-    </div>
-
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏗️ Construcción e Inmobiliario</div>
-      <div class="service-note">Financiamiento estructurado para proyectos y capital de trabajo.</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ARTICLES -->
-<section id="articles">
-  <h2>Artículos y Análisis</h2>
-  <div class="grid">
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">💳 Crédito revolvente vs factoraje</div>
-      <div class="service-note">
-        Diferencias estratégicas entre instrumentos de liquidez.
-        <br><a href="articulos/01_revolvente_vs_factoraje.html">Leer más →</a>
-      </div>
-    </div>
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">📈 Cómo el crédito impulsa el crecimiento</div>
-      <div class="service-note">
-        Impacto del financiamiento en expansión empresarial.
-        <br><a href="articulos/02_credito_crecimiento.html">Leer más →</a>
-      </div>
-    </div>
-    <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏢 Empresas con crédito vs sin crédito</div>
-      <div class="service-note">
-        Diferencias en crecimiento y competitividad.
-        <br><a href="articulos/03_empresas_con_vs_sin_credito.html">Leer más →</a>
-      </div>
-    </div>
-  </div>
-  <div style="margin-top:30px;text-align:center;">
-    <a href="articulos/index.html" class="nav-cta">Explorar todos los artículos</a>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contacto</h2>
@@ -402,7 +261,7 @@ h2 {
     <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn">
       <img src="img/whatsapp.svg"> WhatsApp
     </a>
-    <a href="mailto:contacto@vvbrokeradvisor.com" class="contact-btn">
+    <a href="mailto:contacto@vvbrokeradvisor.com" class="contact-btn email">
       <img src="img/email.svg"> Email
     </a>
   </div>
