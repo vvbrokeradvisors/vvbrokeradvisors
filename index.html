@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VV Broker Advisors | Asesoría Estratégica en Financiamiento Empresarial</title>
 <meta name="description" content="VV Broker Advisors es una firma de asesoría estratégica en financiamiento empresarial en México.">
-
-<!-- SEO EXTRA -->
 <meta name="keywords" content="financiamiento empresarial México, crédito empresarial, broker de crédito, fintech, capital de trabajo">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vvbrokeradvisor.com/">
@@ -113,17 +111,20 @@ h2 {
 
 /* SERVICE CARDS */
 .service-card {
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/cards-gradient.jpg') center/cover no-repeat;
+  border:1px solid rgba(255,255,255,0.15);
   padding:18px;
   border-radius:12px;
   cursor:pointer;
   transition:0.18s ease;
-  color:#565656; /* 🔥 GRIS SKYLINE GLOBAL EN TARJETAS */
+  color:white;
+  box-shadow:0 12px 30px rgba(0,0,0,0.5);
 }
 .service-card:hover {
-  background:#eef2f7;
   transform:translateY(-2px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.7);
 }
 
 /* TITULOS TARJETAS */
@@ -133,7 +134,7 @@ h2 {
   align-items:center;
   gap:10px;
   font-size:1rem;
-  color:#565656; /* GRIS DE LA IMAGEN */
+  color:white;
 }
 
 /* TEXTO DESCRIPTIVO */
@@ -141,11 +142,11 @@ h2 {
   display:none;
   margin-top:10px;
   font-size:0.92rem;
-  background:white;
+  background:rgba(0,0,0,0.85);
   padding:12px;
   border-radius:8px;
-  border:1px solid #e5e7eb;
-  color:#6b6b6b;
+  border:1px solid rgba(255,255,255,0.15);
+  color:#e5e7eb;
 }
 .service-card.active .service-note {
   display:block;
@@ -170,9 +171,9 @@ h2 {
 /* CONTACT */
 .contact-links {
   display:flex;
-  justify-content:center;
+  justify-content:flex-start;
   gap:16px;
-  margin-top:20px;
+  margin-top:8px;
 }
 .contact-btn {
   display:flex;
@@ -187,6 +188,20 @@ h2 {
   border:1px solid #1f2933;
 }
 .contact-btn img {width:16px;height:16px;}
+
+/* ABOUT BACKGROUND */
+#about .value-box {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/cards-gradient.jpg') center/cover no-repeat !important;
+  color:white !important;
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 12px 30px rgba(0,0,0,0.5);
+}
+#about .value-box p,
+#about .value-box strong {
+  color:white !important;
+}
 
 </style>
 </head>
@@ -284,36 +299,42 @@ h2 {
   </div>
 </section>
 
-<!-- ARTICLES -->
+<!-- ARTICLES (MODIFICADO) -->
 <section id="articles">
   <h2>Artículos y Análisis</h2>
+
   <div class="grid">
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">💳 Qué es un crédito revolvente empresarial</div>
+      <div class="service-title">💳 Crédito revolvente vs factoraje</div>
       <div class="service-note">
-        Explicación del funcionamiento de líneas revolventes y su impacto en capital de trabajo.
-        <br><a href="articulos/credito-revolvente.html">Leer más →</a>
+        Diferencias estratégicas entre instrumentos de liquidez y financiamiento empresarial.
+        <br><a href="articulos/01_revolvente_vs_factoraje.html">Leer más →</a>
       </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📈 Cómo el crédito impulsa el crecimiento empresarial</div>
       <div class="service-note">
-        Cómo las empresas utilizan financiamiento para expansión y optimización de capital.
-        <br><a href="articulos/credito-crecimiento.html">Leer más →</a>
+        Impacto del financiamiento estructurado en expansión, inversión y resiliencia empresarial.
+        <br><a href="articulos/02_credito_crecimiento.html">Leer más →</a>
       </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏢 Empresas con crédito vs empresas sin crédito: impacto en crecimiento</div>
+      <div class="service-title">🏢 Empresas con crédito vs empresas sin crédito</div>
       <div class="service-note">
-        Evidencia global y México sobre cómo el acceso al financiamiento influye en el crecimiento empresarial.
-        <br><a href="articulos/empresas-con-credito.html">Leer más →</a>
+        Diferencias en crecimiento, valuación y competitividad empresarial.
+        <br><a href="articulos/03_empresas_con_vs_sin_credito.html">Leer más →</a>
       </div>
     </div>
 
   </div>
+
+  <div style="margin-top:30px;text-align:center;">
+    <a href="articulos/index.html" class="nav-cta">Explorar todos los artículos</a>
+  </div>
+
 </section>
 
 <!-- CONTACT -->
