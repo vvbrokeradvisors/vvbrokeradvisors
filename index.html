@@ -14,7 +14,7 @@
 /* ===== BASE CORPORATIVO ===== */
 body {
   margin:0;
-  font-family:"Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   background:#ffffff;
   color:#1f2933;
   line-height:1.7;
@@ -22,7 +22,7 @@ body {
 }
 
 /* NAVBAR */
-.navbar{
+.navbar {
   position:fixed;
   top:0;
   width:100%;
@@ -34,26 +34,27 @@ body {
   align-items:center;
   z-index:1000;
 }
-.nav-logo{font-weight:600;font-size:1.1rem;}
-.nav-links a{
+.nav-logo {font-weight:600;font-size:1.1rem;letter-spacing:0.2px;}
+.nav-links a {
   margin-left:18px;
   text-decoration:none;
-  font-size:.9rem;
+  font-size:0.9rem;
   color:#111827;
 }
-.nav-links a:hover{text-decoration:underline;}
-.nav-cta{
+.nav-links a:hover {text-decoration:underline;}
+.nav-cta {
   margin-left:22px;
   padding:9px 16px;
   background:#111827;
   color:white;
   border-radius:6px;
   text-decoration:none;
-  font-size:.85rem;
+  font-size:0.85rem;
+  font-weight:500;
 }
 
 /* HERO */
-.hero{
+.hero {
   background:url('img/ciudad-bg.jpg') center/cover no-repeat;
   height:72vh;
   display:flex;
@@ -62,69 +63,137 @@ body {
   text-align:center;
   padding-top:60px;
 }
-.hero-overlay{
-  background:rgba(0,0,0,.65);
+.hero-overlay {
+  background:rgba(0,0,0,0.65);
   padding:42px 60px;
   color:white;
   border-radius:10px;
 }
+.hero-overlay h1 {
+  font-size:2.2rem;
+  margin-bottom:8px;
+}
+.hero-overlay p {
+  font-size:1.1rem;
+  opacity:0.95;
+}
 
 /* SECTIONS */
-section{
+section {
   max-width:1100px;
   margin:90px auto;
   padding:0 20px;
 }
-h2{font-size:1.45rem;font-weight:600}
+h2 {
+  color:#111111;
+  margin-bottom:15px;
+  font-size:1.45rem;
+  font-weight:600;
+}
+
+/* VALUE BOX */
+.value-box {
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  padding:28px;
+  border-radius:14px;
+  font-size:1.05rem;
+  box-shadow:0 6px 18px rgba(0,0,0,0.03);
+}
 
 /* GRID */
-.grid{
+.grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
   gap:18px;
   margin-top:20px;
 }
 
-/* CARDS */
-.service-card{
-  background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-  url('img/cards-gradient.jpg') center/cover no-repeat;
+/* SERVICE CARDS */
+.service-card {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/cards-gradient.jpg') center/cover no-repeat;
+  border:1px solid rgba(255,255,255,0.15);
   padding:18px;
   border-radius:12px;
   cursor:pointer;
+  transition:0.18s ease;
   color:white;
+  box-shadow:0 12px 30px rgba(0,0,0,0.5);
 }
-.service-title{font-weight:600;}
-.service-note{
+.service-card:hover {
+  transform:translateY(-2px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.7);
+}
+
+.service-title {
+  font-weight:600;
+  font-size:1rem;
+}
+
+.service-note {
   display:none;
   margin-top:10px;
-  font-size:.92rem;
-  background:rgba(0,0,0,.85);
+  font-size:0.92rem;
+  background:rgba(0,0,0,0.85);
   padding:12px;
   border-radius:8px;
+  border:1px solid rgba(255,255,255,0.15);
+  color:#e5e7eb;
 }
-.service-card.active .service-note{display:block}
+.service-card.active .service-note {
+  display:block;
+}
 
-/* ABOUT */
-#about .value-box{
-  background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-  url('img/cards-gradient.jpg') center/cover no-repeat;
+/* CONTACT */
+.contact-links {
+  display:flex;
+  gap:16px;
+  margin-top:8px;
+}
+.contact-btn {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 16px;
+  background:#020617;
   color:white;
-  padding:28px;
-  border-radius:14px;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:0.85rem;
+  border:1px solid #1f2933;
 }
-
-/* ARTÍCULOS: Leer más en blanco */
-#articles a{color:white !important}
+.contact-btn img {width:16px;height:16px;}
 
 /* FOOTER */
-.footer{
+.footer {
   background:#020617;
   color:#cbd5f5;
   padding:50px 20px;
   text-align:center;
+  font-size:0.85rem;
 }
-.footer a{color:#cbd5f5;text-decoration:none}
+.footer-logo img {
+  max-width:160px;
+  height:auto;
+  margin-bottom:15px;
+}
+.footer a {color:#cbd5f5;text-decoration:none;}
+.footer a:hover {text-decoration:underline;}
+
+/* ABOUT BACKGROUND */
+#about .value-box {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/cards-gradient.jpg') center/cover no-repeat !important;
+  color:white !important;
+  border:1px solid rgba(255,255,255,0.15);
+}
+#about .value-box p,
+#about .value-box strong {
+  color:white !important;
+}
 
 </style>
 </head>
@@ -138,6 +207,7 @@ h2{font-size:1.45rem;font-weight:600}
     <a href="#services">Servicios</a>
     <a href="#sectors">Sectores</a>
     <a href="#articles">Artículos</a>
+    <a href="#contact">Contacto</a>
     <a href="#contact" class="nav-cta">Solicitar Diagnóstico</a>
   </div>
 </div>
@@ -149,7 +219,6 @@ h2{font-size:1.45rem;font-weight:600}
   </div>
 </header>
 
-<!-- ABOUT -->
 <section id="about">
   <h2>Nosotros</h2>
   <div class="value-box">
@@ -160,84 +229,158 @@ h2{font-size:1.45rem;font-weight:600}
   </div>
 </section>
 
-<!-- WHY US -->
 <section id="why-us">
   <h2>Por qué VV Broker Advisors</h2>
   <div class="grid">
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏦 Acceso a múltiples instituciones financieras</div>
-      <div class="service-note">Canalizamos cada operación con la entidad más adecuada según perfil y necesidad.</div>
+      <div class="service-title">🏦 Acceso a múltiples instituciones financieras y fintech</div>
+      <div class="service-note">
+        Evaluamos cada operación y la canalizamos con la institución más adecuada según perfil, sector y capacidad financiera.
+      </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">📉 Optimización de estructura de deuda</div>
-      <div class="service-note">Buscamos eficiencia financiera, evitando sobreendeudamiento.</div>
+      <div class="service-title">📉 Optimización de estructura de deuda y costo financiero</div>
+      <div class="service-note">
+        Analizamos tasas, plazos y carga financiera para proponer estructuras sostenibles.
+      </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">📊 Diagnóstico financiero</div>
-      <div class="service-note">Análisis previo que incrementa la probabilidad de aprobación.</div>
+      <div class="service-title">📊 Diagnóstico financiero estructurado</div>
+      <div class="service-note">
+        Revisión de información financiera y variables que inciden en la aprobación de crédito.
+      </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🤝 Acompañamiento integral</div>
-      <div class="service-note">Seguimiento desde análisis hasta dispersión.</div>
+      <div class="service-title">🤝 Acompañamiento completo hasta dispersión</div>
+      <div class="service-note">
+        Acompañamiento integral desde análisis inicial hasta la dispersión del financiamiento.
+      </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">⚙️ Estrategia de capital</div>
-      <div class="service-note">Uso eficiente del crédito para crecimiento y liquidez.</div>
+      <div class="service-title">⚙️ Estrategia de capital de trabajo</div>
+      <div class="service-note">
+        Asesoría sobre uso eficiente del crédito para operación y crecimiento.
+      </div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🧩 Asesoría independiente</div>
-      <div class="service-note">Sin conflicto de interés ni exclusividad bancaria.</div>
+      <div class="service-note">
+        Actuamos sin conflicto de interés, priorizando la mejor solución financiera.
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- SECTORS -->
+<section id="services">
+  <h2>Servicios</h2>
+  <div class="grid">
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">💼 Intermediación Financiera</div>
+      <div class="service-note">Facilitamos la comunicación entre empresas e instituciones financieras.</div>
+    </div>
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">📊 Precalificación</div>
+      <div class="service-note">Evaluación de elegibilidad, montos y probabilidad de aprobación.</div>
+    </div>
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">📑 Estructuración</div>
+      <div class="service-note">Definición de estructura óptima de financiamiento.</div>
+    </div>
+  </div>
+</section>
+
 <section id="sectors">
   <h2>Sectores Atendidos</h2>
   <div class="grid">
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🏭 Manufactura</div>
-      <div class="service-note">Capital de trabajo y maquinaria.</div>
+      <div class="service-note">Financiamiento para maquinaria y expansión productiva.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🚚 Logística</div>
-      <div class="service-note">Flotillas y operación.</div>
+      <div class="service-title">🚚 Logística y Transporte</div>
+      <div class="service-note">Soluciones para flotillas y liquidez operativa.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🍽️ Restaurantes</div>
-      <div class="service-note">Liquidez y expansión.</div>
+      <div class="service-title">🍽️ Restaurantes y Alimentos</div>
+      <div class="service-note">Apoyo financiero para operación y expansión.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🛒 Comercio</div>
-      <div class="service-note">Inventarios y rotación.</div>
+      <div class="service-title">🛒 Comercio y Distribución</div>
+      <div class="service-note">Capital para inventarios y crecimiento comercial.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">💻 Tecnología</div>
-      <div class="service-note">Escalamiento y operación.</div>
+      <div class="service-note">Financiamiento para escalamiento y operación tecnológica.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
-      <div class="service-title">🏗️ Construcción</div>
-      <div class="service-note">Proyectos y capital estructurado.</div>
+      <div class="service-title">🌾 Agroindustria</div>
+      <div class="service-note">Soluciones alineadas a ciclos productivos y estacionalidad.</div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">🏢 Servicios Profesionales</div>
+      <div class="service-note">Liquidez para operación y crecimiento empresarial.</div>
+    </div>
+
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">🏗️ Construcción e Inmobiliario</div>
+      <div class="service-note">Financiamiento estructurado para proyectos.</div>
     </div>
 
   </div>
 </section>
 
+<section id="articles">
+  <h2>Artículos y Análisis</h2>
+  <div class="grid">
+    <div class="service-card" onclick="toggleService(this)">
+      <div class="service-title">💳 Crédito revolvente vs factoraje</div>
+      <div class="service-note">
+        Diferencias estratégicas entre instrumentos financieros.
+        <br><a href="articulos/01_revolvente_vs_factoraje.html" style="color:#ffffff;">Leer más →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contacto</h2>
+  <div class="contact-links">
+    <a href="https://wa.me/5215665044419" target="_blank" class="contact-btn">
+      <img src="img/whatsapp.svg"> WhatsApp
+    </a>
+    <a href="mailto:contacto@vvbrokeradvisor.com" class="contact-btn">
+      <img src="img/email.svg"> Email
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="img/logo.png" alt="VV Broker Advisors Logo">
+  </div>
+  <p>VV Broker Advisors actúa como intermediario y asesor independiente.</p>
+  <p>
+    <a href="aviso-de-privacidad.html">Aviso de Privacidad</a> |
+    <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+  </p>
+</footer>
+
 <script>
-function toggleService(card){
+function toggleService(card) {
   card.classList.toggle("active");
 }
 </script>
