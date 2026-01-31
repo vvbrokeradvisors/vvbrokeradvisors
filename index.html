@@ -10,7 +10,6 @@
 <link rel="canonical" href="https://vvbrokeradvisor.com/">
 
 <style>
-
 /* ===== BASE CORPORATIVO ===== */
 body {
   margin:0;
@@ -148,21 +147,19 @@ h2 {
   display:block;
 }
 
-/* FOOTER */
-.footer {
-  background:#020617;
-  color:#cbd5f5;
-  padding:50px 20px;
-  text-align:center;
-  font-size:0.85rem;
+/* ABOUT BACKGROUND */
+#about .value-box {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/cards-gradient.jpg') center/cover no-repeat !important;
+  color:white !important;
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 12px 30px rgba(0,0,0,0.5);
 }
-.footer-logo img {
-  max-width:160px;
-  height:auto;
-  margin-bottom:15px;
+#about .value-box p,
+#about .value-box strong {
+  color:white !important;
 }
-.footer a {color:#cbd5f5;text-decoration:none;margin:0 8px;}
-.footer a:hover {text-decoration:underline;}
 
 /* CONTACT */
 .contact-links {
@@ -185,20 +182,21 @@ h2 {
 }
 .contact-btn img {width:16px;height:16px;}
 
-/* ABOUT BACKGROUND */
-#about .value-box {
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('img/cards-gradient.jpg') center/cover no-repeat !important;
-  color:white !important;
-  border:1px solid rgba(255,255,255,0.15);
-  box-shadow:0 12px 30px rgba(0,0,0,0.5);
+/* FOOTER */
+.footer {
+  background:#020617;
+  color:#cbd5f5;
+  padding:50px 20px;
+  text-align:center;
+  font-size:0.85rem;
 }
-#about .value-box p,
-#about .value-box strong {
-  color:white !important;
+.footer-logo img {
+  max-width:160px;
+  height:auto;
+  margin-bottom:15px;
 }
-
+.footer a {color:#cbd5f5;text-decoration:none;margin:0 8px;}
+.footer a:hover {text-decoration:underline;}
 </style>
 </head>
 
@@ -243,50 +241,32 @@ h2 {
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🏦 Acceso a múltiples instituciones financieras y fintech</div>
-      <div class="service-note">
-        Evaluamos y canalizamos cada caso con la institución más adecuada según perfil,
-        sin depender de un solo proveedor financiero.
-      </div>
+      <div class="service-note">Evaluamos y canalizamos cada caso con la institución más adecuada según perfil, sin depender de un solo proveedor financiero.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📉 Optimización de estructura de deuda y costo financiero</div>
-      <div class="service-note">
-        Analizamos costo financiero, plazos y flujo para evitar sobreendeudamiento
-        y mejorar la salud financiera del negocio.
-      </div>
+      <div class="service-note">Analizamos costo financiero, plazos y flujo para evitar sobreendeudamiento y mejorar la salud financiera del negocio.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📊 Diagnóstico financiero estructurado con enfoque en aprobabilidad</div>
-      <div class="service-note">
-        Revisión de estados financieros, comportamiento bancario y variables clave
-        para maximizar probabilidad de aprobación.
-      </div>
+      <div class="service-note">Revisión de estados financieros, comportamiento bancario y variables clave para maximizar probabilidad de aprobación.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🤝 Acompañamiento completo hasta dispersión y asesoría personalizada</div>
-      <div class="service-note">
-        Acompañamos al cliente durante todo el proceso,
-        desde el análisis inicial hasta la dispersión del financiamiento.
-      </div>
+      <div class="service-note">Acompañamos al cliente durante todo el proceso, desde el análisis inicial hasta la dispersión del financiamiento.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">⚙️ Estrategia de capital de trabajo y crecimiento</div>
-      <div class="service-note">
-        Asesoramos sobre uso eficiente del crédito para operación,
-        crecimiento y estabilidad de flujo de efectivo.
-      </div>
+      <div class="service-note">Asesoramos sobre uso eficiente del crédito para operación, crecimiento y estabilidad de flujo de efectivo.</div>
     </div>
 
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🧩 Asesoría independiente sin conflicto de interés</div>
-      <div class="service-note">
-        Actuamos sin conflicto de interés,
-        priorizando la solución financiera más conveniente para la empresa.
-      </div>
+      <div class="service-note">Actuamos sin conflicto de interés, priorizando la solución financiera más conveniente para la empresa.</div>
     </div>
 
   </div>
@@ -296,32 +276,26 @@ h2 {
 <section id="services">
   <h2>Servicios</h2>
   <div class="grid">
-
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">💼 Intermediación Financiera</div>
       <div class="service-note">Facilitamos la comunicación entre empresas e instituciones financieras sin otorgar crédito.</div>
     </div>
-
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📊 Precalificación</div>
       <div class="service-note">Evaluamos información financiera para determinar elegibilidad, montos, plazos y probabilidad de aprobación.</div>
     </div>
-
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">📑 Estructuración</div>
       <div class="service-note">Definimos estructura óptima de financiamiento, plazos, tasas, colateral y escenarios financieros.</div>
     </div>
-
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">🤝 Acompañamiento</div>
       <div class="service-note">Asistencia durante todo el proceso con instituciones financieras, desde solicitud hasta dispersión.</div>
     </div>
-
     <div class="service-card" onclick="toggleService(this)">
       <div class="service-title">⏱️ Orientación Estratégica</div>
       <div class="service-note">Asesoría sobre escenarios de deuda, riesgos financieros, flujo de efectivo y optimización de capital.</div>
     </div>
-
   </div>
 </section>
 
@@ -445,4 +419,4 @@ function toggleService(card) {
 </script>
 
 </body>
-</html> 
+</html>
